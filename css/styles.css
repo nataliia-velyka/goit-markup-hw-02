@@ -1,0 +1,57 @@
+body {
+    font-family: 'Roboto';
+    background-color: #fff;
+    color: #212121;
+}
+
+/*Header*/
+
+ul {
+    list-style: none;
+}
+
+/*header logo*/
+.logo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: #2196F3;
+    text-decoration: none;
+}
+
+.logo-second-part {
+    color: #000000;
+}
+
+/* header menu*/
+.menu {
+    list-style: none;
+    text-decoration: none;
+}
+
+.menu .list {
+    text-decoration: none;
+}
+
+/* header contacts */
+.contacts {
+    list-style: none;
+    text-decoration: none;
+}
+
+
+/* Main content */
+
+.main {
+    background-color: #2F303A;
+}
+
+
+/*Footer*/
+
+footer {
+    background-color: #2F303A;
+}
