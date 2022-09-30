@@ -1,13 +1,17 @@
 body {
-    font-family: 'Roboto';
-    background-color: #fff;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    margin: 0 auto;
+    width: 1600px;
+    background-color: #ffffff;
     color: #212121;
 }
 
 /*Header*/
 
-ul {
-    list-style: none;
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /*header logo*/
@@ -19,6 +23,8 @@ ul {
     letter-spacing: 0.03em;
     color: #2196F3;
     text-decoration: none;
+
+    margin: 24px 1240px 25px 215px;
 }
 
 .logo-second-part {
@@ -26,9 +32,15 @@ ul {
 }
 
 /* header menu*/
+
+
 .menu {
     list-style: none;
     text-decoration: none;
+    display: flex;
+
+    margin: 32px 866px 32px 453px;
+    
 }
 
 .menu .list {
@@ -138,8 +150,45 @@ ul {
     text-align: center;
     letter-spacing: 0.03em;
 
-    padding: 94px 668px 512px 668px;
+    margin: 94px 668px 50px 668px;
 }
+
+.teams-list{
+    position: absolute;
+    margin: 186px 215px 94px 215px;
+}
+
+.team-card {
+    display: inline-block;
+    margin-right: 30px;
+    width: 270px;
+    height: 368px;
+
+    background: #FFFFFF; 
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    text-align: center;
+}
+
+.teams-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    margin-top: 30px;
+}
+
+.teams-role {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    margin-top: 10px;
+    
+    color: #757575;
+}
+
 /*Footer*/
 
 footer {
