@@ -13,7 +13,6 @@ ul {
 /*header logo*/
 .logo {
     font-family: 'Raleway';
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 31px;
@@ -34,7 +33,6 @@ ul {
 
 .menu .list {
     color: #212121;
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
@@ -42,7 +40,8 @@ ul {
     text-decoration: none;
 }
 
-.menu .list:hover {
+.menu .list:hover,
+.menu .list:focus  {
     color: #2196F3;
 }
 
@@ -58,16 +57,17 @@ ul {
 
 .contacts .list {
     color: #757575;
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
 }
 
-.contacts .list:hover {
+.contacts .list:hover,
+.contacts .list:focus {
     color: #2196F3;
 }
+
 
 
 /* Main content */
@@ -79,7 +79,6 @@ ul {
 }
 
 .title {
-    font-style: normal;
     font-weight: 900;
     font-size: 44px;
     line-height: 60px;
@@ -95,7 +94,6 @@ ul {
 }
 
 .button {
-    font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
@@ -104,6 +102,7 @@ ul {
     text-align: center;
     letter-spacing: 0.06em;
     color: #FFFFFF;
+    cursor: pointer;
 
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -122,6 +121,25 @@ ul {
     
 }
 
+/* Teams */
+
+.teams {
+    background-color: #F5F4FA;
+    width: 1600px;
+    height: 648px;
+}
+
+.teams-title {
+    color: #212121;
+    position: absolute; 
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    padding: 94px 668px 512px 668px;
+}
 /*Footer*/
 
 footer {
