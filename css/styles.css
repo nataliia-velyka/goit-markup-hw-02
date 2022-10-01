@@ -6,6 +6,19 @@ body {
     color: #212121;
 }
 
+:root {
+    --main-color: #212121;
+    --focus-color: #2196F3;
+    --contacts-color: #757575;
+    --text-add: #000000;
+    --text-opposite: #ffffff;
+
+
+    --background-total: #ffffff;
+    --background-main: #2F303A;
+    --background-second: #F5F4FA;
+    
+}
 /*Header*/
 
 .head {
@@ -21,14 +34,14 @@ body {
     font-size: 26px;
     line-height: 31px;
     letter-spacing: 0.03em;
-    color: #2196F3;
+    color: var(--focus-color);
     text-decoration: none;
 
     margin: 24px 1240px 25px 215px;
 }
 
 .logo-second-part {
-    color: #000000;
+    color: var(--text-add);
 }
 
 /* header menu*/
@@ -44,7 +57,6 @@ body {
 }
 
 .menu .list {
-    color: #212121;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
@@ -54,11 +66,11 @@ body {
 
 .menu .list:hover,
 .menu .list:focus  {
-    color: #2196F3;
+    color: var(--focus-color);
 }
 
 .menu .list.current {
-    color: #2196F3;
+    color: var(--focus-color);
 }
 
 /* header contacts */
@@ -68,7 +80,7 @@ body {
 }
 
 .contacts .list {
-    color: #757575;
+    color: var(--contacts-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
@@ -77,7 +89,7 @@ body {
 
 .contacts .list:hover,
 .contacts .list:focus {
-    color: #2196F3;
+    color: var(--focus-color);
 }
 
 
@@ -85,7 +97,7 @@ body {
 /* Main content */
 
 .main {
-    background-color: #2F303A;
+    background-color: var(--background-main);
     width: 1600px;
     height: 600px;
 }
@@ -97,7 +109,7 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase; 
-    color: #FFFFFF;
+    color: var(--text-opposite);
 
     padding-top: 200px;
     padding-left: 452px;
@@ -113,10 +125,10 @@ body {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
+    color: var(--text-opposite);
     cursor: pointer;
 
-    background: #2196F3;
+    background: var(--focus-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 
@@ -133,17 +145,52 @@ body {
     
 }
 
+/* Our work */
+
+.work {
+    width: 1170px;
+    height: 386px;
+    left: 215px;
+    top: 966px;
+    margin-bottom: 188px;
+    
+    
+}
+
+.work-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    margin: 94px 617px 50px 617px;
+}
+
+.work-list {
+    text-decoration: none;
+    padding: 186px 215px 94px 215px;
+    
+}
+
+.work-card {
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 30px;
+    
+    
+}
+
 /* Teams */
 
 .teams {
-    background-color: #F5F4FA;
+    background-color: var(--background-second);
     width: 1600px;
     height: 648px;
+    
 }
 
 .teams-title {
-    color: #212121;
-    position: absolute; 
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
@@ -154,19 +201,22 @@ body {
 }
 
 .teams-list{
-    position: absolute;
+    text-decoration: none;
     margin: 186px 215px 94px 215px;
+    
 }
 
 .team-card {
     display: inline-block;
-    margin-right: 30px;
+    margin: auto;
     width: 270px;
     height: 368px;
 
-    background: #FFFFFF; 
+    background: var(--background-total);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    
+    flex: 30px;
 
     text-align: center;
 }
@@ -186,11 +236,10 @@ body {
     letter-spacing: 0.03em;
     margin-top: 10px;
     
-    color: #757575;
-}
-
+    color: var(--contacts-color);
+}    
 /*Footer*/
 
 footer {
-    background-color: #2F303A;
+    background-color: var(--background-main);
 }
