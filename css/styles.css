@@ -372,13 +372,13 @@ body {
        margin-bottom: 10px;
 }
 
-.contacts {
+.footer-email {
     color: var(--contacts-color);
     position: absolute; 
        left: 215px;
        top: 141px; 
        margin-bottom: 10px;
-}
+} 
 
 .phone {
     color: var(--contacts-color);
