@@ -1,11 +1,3 @@
-body {
-    font-family: 'Roboto', 'Arial', sans-serif;
-    margin: 0 auto;
-    width: 1600px;
-    background-color: #ffffff;
-    color: #212121;
-}
-
 :root {
     --main-color: #212121;
     --focus-color: #2196F3;
@@ -17,7 +9,16 @@ body {
     --background-total: #ffffff;
     --background-main: #2F303A;
     --background-second: #F5F4FA;
+    --button-active: #188CE8;
     
+}
+
+body {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    margin: 0 auto;
+    width: 1600px;
+    background-color: var(--background-total);
+    color: var(--main-color);
 }
 
 /*Header*/
@@ -42,8 +43,6 @@ body {
     text-decoration: none;
 
     position: absolute;
-    width: 145px; 
-    height: 31px;
     left: 215px;
     top: 42px;
     
@@ -79,6 +78,8 @@ body {
     letter-spacing: 0.02em;
     text-decoration: none;
 
+    cursor: pointer;
+
     margin-right: 50px;
 }
 
@@ -105,10 +106,13 @@ body {
 
 .contacts .list {
     color: var(--contacts-color);
+    text-decoration: none;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+
+    cursor: pointer;
 
     margin-left: 50px;
 }
@@ -126,12 +130,14 @@ body {
     background-color: var(--background-main);
     width: 1600px;
     height: 600px;
+
+    position: relative;
 }
 
 .title {
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
+    line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase; 
@@ -146,41 +152,84 @@ body {
 .button {
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.875;
     display: flex;
     align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
     color: var(--text-opposite);
+
     cursor: pointer;
 
-    background: var(--focus-color);
+    background: var(--button-active);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 
     width: 216px;
     height: 50px;
-    left: 692px;
-    top: 430px;
-
-    padding-top: 10px;
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-bottom: 10px;
-
+   
+    padding: 10px 26px;
     
+    position: absolute;
+    width: 216px;
+    height: 50px;
+    left: 692px;
+    top: 350px;
+  
+}
+
+.button:hover,
+.button:focus {
+    background: var(--focus-color);
+}
+
+/* Specifics */
+
+.specifics {
+    margin: 94px 170px; 
+    
+}
+
+.specifics-title {
+    display: none;
+}
+
+.spspecifics-list {
+    width: 1200px;
+    height: 98px;
+}
+
+.specifics-card {
+    list-style: none;
+    
+    display: inline-block;
+    margin: 0px 15px;
+    width: 270px;
+    height: 98px;
+}
+
+.specifics-name {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+}
+
+.specifics-description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--contacts-color);
 }
 
 /* Our work */
 
 .work {
-    width: 1170px;
-    height: 386px;
-    left: 215px;
-    top: 966px;
-    margin-bottom: 188px;
-    
-    
+    margin: auto 170px; 
+    position: relative;  
 }
 
 .work-title {
@@ -190,21 +239,20 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
 
-    margin: 94px 617px 50px 617px;
+    position: absolute;
+    left: 455px;
+
+    margin-bottom: 50px;
 }
 
 .work-list {
-    text-decoration: none;
-    padding: 186px 215px 94px 215px;
-    
+    margin-bottom: 50px;  
 }
 
 .work-card {
-    text-decoration: none;
+    list-style: none;
     display: inline-block;
-    margin-right: 30px;
-    
-    
+    margin: 94px 15px;
 }
 
 /* Teams */
@@ -213,28 +261,33 @@ body {
     background-color: var(--background-second);
     width: 1600px;
     height: 648px;
-    
+    position: relative;
 }
 
 .teams-title {
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
 
-    margin: 94px 668px 50px 668px;
+    position: absolute;
+    left: 668px;
+    top: 94px;  
 }
 
 .teams-list{
-    text-decoration: none;
-    margin: 186px 215px 94px 215px;
+    list-style: none;
+    
+    position: absolute;
+    left: 175px;
+    top: 186px;
     
 }
 
 .team-card {
     display: inline-block;
-    margin: auto;
+    margin: 15px;
     width: 270px;
     height: 368px;
 
@@ -242,15 +295,13 @@ body {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     
-    flex: 30px;
-
     text-align: center;
 }
 
 .teams-name {
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.19;
     letter-spacing: 0.03em;
     margin-top: 30px;
 }
@@ -258,7 +309,7 @@ body {
 .teams-role {
     font-weight: 400;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.19;
     letter-spacing: 0.03em;
     margin-top: 10px;
     
@@ -266,6 +317,76 @@ body {
 }    
 /*Footer*/
 
-footer {
+.footer {
     background-color: var(--background-main);
+    height: 252px;
+    position: relative;
 }
+
+.logo.footer {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--focus-color);
+    text-decoration: none;
+
+    position: absolute;
+    left: 215px;
+    top: 60px; 
+}
+
+.logo-second.footer {
+    color: var(--text-opposite);
+}
+
+.footer-address a {
+       color: var(--text-opposite);
+       font-style: normal;
+       text-decoration: none;
+}
+
+.footer-address a:hover,
+.footer-address a:focus {
+    color: var(--focus-color);
+}
+
+
+.footer-list{
+    font-weight: 400;
+    list-style: none;;
+
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+
+
+.map {
+    color: var(--text-opposite);
+    position: absolute; 
+       left: 215px;
+       top: 111px; 
+       margin-bottom: 10px;
+}
+
+.contacts {
+    color: var(--contacts-color);
+    position: absolute; 
+       left: 215px;
+       top: 141px; 
+       margin-bottom: 10px;
+}
+
+.phone {
+    color: var(--contacts-color);
+    position: absolute; 
+       left: 215px;
+       top: 151px; 
+       margin-top: 10px;    
+}
+
+
+/* Portfolio Filters */
