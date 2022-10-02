@@ -10,6 +10,7 @@
     --background-main: #2F303A;
     --background-second: #F5F4FA;
     --button-active: #188CE8;
+    --add-button: #EEEEEE;
     
 }
 
@@ -403,6 +404,8 @@ body {
 .filters-list{
     list-style: none;
     display: flex;
+
+    margin-bottom: 4px;
 }
     
 
@@ -432,3 +435,49 @@ body {
 }
 
 /* Projects */
+
+.projects {
+    margin-left: 225px;
+    margin-bottom: 94px;
+}
+
+.projects-list{
+    list-style: none;
+    
+}
+
+.projects-card{
+    width: 370px;
+    height: 404px;
+    margin: 30px 15px;
+
+    background: var(--background-total);
+    border: 1px solid var(--add-button);
+
+    display: inline-block;
+}
+
+.projects-photo{
+    height: 294px;
+}
+
+.projects-name{
+    margin-top: 20px;
+    margin-left: 24px; 
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+    color: var(--main-color);
+}
+
+.projects-filter{
+    margin: 4px;
+    margin-left: 24px; 
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.03em;
+    color: var(--contacts-color);
+}
+
